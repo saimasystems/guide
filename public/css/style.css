@@ -54,6 +54,19 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
+/* .....Colors.........  */
+$valid : #054056;
+$warning : #C6DDEA;
+$information : #313131;
+
+/* .....Typography.....  */
+$font : "NobileRegular", "Helvetica", "Verdana", "Arial", "sans-serif";
+$heading : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+
+/* .....Layout.........  */
+/* .....Defaults.......  */
+/* .....Breakpoints....  */
+
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
@@ -63,6 +76,8 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
+/* -------------------------- Imports -------------------------- */
+@import url(nobile.css);
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
@@ -150,44 +165,64 @@ header, footer, nav, section, article, hgroup, figure {
     display: none; } }
 
 .valid {
-  color: #089e00; }
+  color: #054056; }
 
 .error {
   color: red; }
 
 .warning {
-  color: #fff664; }
+  color: #C6DDEA; }
 
 .information {
-  color: #000db5; }
+  color: #313131; }
 
 .font-secondary {
-  font-family: Georgia, Times, "Times New Roman", serif; }
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #313131; }
 
 body {
   background: white;
-  font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font: 100%/0.875 "NobileRegular", "Helvetica", "Verdana", "Arial", "sans-serif";
   -webkit-text-size-adjust: 100%;
-  color: #333333; }
+  color: #313131; }
 
 /* Links */
 a {
-  color: #333333;
+  color: #313131;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: gray; }
+    color: 313131; }
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
-  line-height: 1.2; }
-
+  line-height: 1.5;
+  font-size: font-size-large; }
+  
 h2, .beta {
-  line-height: 1.2; }
+  line-height: 1.125;
+  font-size: font-size-med-2; }
 
 h3, .gamma {
-  line-height: 1.2; }
+  font: "NobileBoldItalic", "Helvetica", "Verdana", "Arial", "sans-serif";
+  line-height: 1;
+  font-size: font-size-med; }
+
+h4, .delta   {
+  font: "NobileBoldItalic", "Helvetica", "Verdana", "Arial", "sans-serif";
+  line-height: 1;
+  font-size: font-size-med; }
+
+h5, .epsilon {
+  font: "NobileBoldItalic", "Helvetica", "Verdana", "Arial", "sans-serif";
+  line-height: 1;
+  font-size: font-size-med; }
+
+h6, .zeta    {
+  font: "NobileBoldItalic", "Helvetica", "Verdana", "Arial", "sans-serif";
+  line-height: 1;
+  font-size: 1em; }
 
 /* Subheadings */
 .subheading {
@@ -196,7 +231,7 @@ h3, .gamma {
 
 /* Text-Related Elements */
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 0.875em; }
 
 /* Blockquote */
 blockquote {

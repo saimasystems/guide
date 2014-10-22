@@ -6,11 +6,11 @@
 
 The PHP version of Pattern Lab is, at its core, a static site generator. It combines platform-agnostic assets, like the [Mustache](http://mustache.github.io/)-based patterns and the JavaScript-based viewer, with a PHP-based "builder" that transforms and dynamically builds the Pattern Lab site. By making it a static site generator, Pattern Lab strongly separates patterns, data, and presentation from build logic. 
 
-## Demo
+## Demo Page on Github Pages
 
-You can play with a demo of the front-end of Pattern Lab at [demo.patternlab.io](http://demo.patternlab.io).
+You can front-end of Pattern Lab at [saimasystems.github.io/guide](http://saimasystems.github.io/guide/).
 
-## Getting Started
+## Getting Started, takes less than half an hour. Reading it through is worth while.
 
 * [Requirements](http://patternlab.io/docs/requirements.html)
 * [Installing the PHP Version of Pattern Lab](http://patternlab.io/docs/installation.html)
